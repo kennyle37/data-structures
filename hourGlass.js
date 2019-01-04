@@ -44,3 +44,25 @@ Complete the function hourglassSum in the editor below. It should return an inte
     
     return the max
 */
+
+function hourglassSum(arr) {
+  let maxRow = 3 + arr[0].length % 3;
+  let maxCol = 3 + arr.length % 3;
+  let max = -Infinity;
+
+  for (let i = 0; i <= maxCol; i++) {
+      for (let j = 0; j <= maxRow; j++) {
+          //top
+          let sum = arr[i][j] + arr[i][j + 1] + arr[i][j + 2];
+
+          //mid
+          sum += arr[i + 1][j + 1];
+
+          //bot
+          sum += arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j + 2];
+          max = Math.max(sum, max);
+      }
+  }
+
+  return max;
+}
