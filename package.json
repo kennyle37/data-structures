@@ -1,0 +1,19 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec mocha -R min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennyle37/data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennyle37/data-structures/issues"
+  },
+  "homepage": "https://github.com/kennyle37/data-structures#readme"
+}
