@@ -19,3 +19,7 @@ test("[5, 1, 2, 3, 4] returns 1", () => {
 test("[2,3,4,5,6,1] returns 1", () => {
   expect(findMin([2, 3, 4, 5, 6, 1])).toEqual(1);
 });
+
+test("[2,3,4,5,6,0,1] returns 0", () => {
+  expect(findMin([2,3,4,5,6,0,1])).toEqual(0);
+})
